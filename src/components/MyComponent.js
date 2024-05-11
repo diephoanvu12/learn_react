@@ -3,12 +3,16 @@
 import React from "react";
 
 class MyComponent extends React.Component {
+    state = {
+        name: 'Vu',
+        address: 'HCM',
+        age: 24
+    };
     //JSX cho phép javascript trong html
     render() {
         return (
             <div>
-                My first component
-                {Math.random()}
+                My name is {this.state.name}
             </div>
         );
     }
